@@ -1,23 +1,53 @@
-{{ define "main" }}
-{{ partial "header" . }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="content">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-12 col-lg-8">
+    <section id="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Diego, a game developer and artist 3D.</p>
+    </section>
 
-                <div class="mx-0 mx-md-4 posts">
-                    {{ range .Data.Pages.GroupByDate "2006" "desc"}}
-                    {{ range sort .Pages "Date" "desc" }}
-                    {{ partial "list" . }}
-                    {{ end }}
-                    {{ end }}
-                </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p class="textAling">I'm a passionate game developer and 3D artist with a passion for creating immersive and visually stunning gaming experiences. With expertise in both programming and artistic design, I specialize in developing engaging gameplay mechanics and crafting high-quality 3D models and environments. My work combines technical proficiency with creative vision to bring unique and captivating games to life.</p>
+    </section>
 
-            </div>
+    <section id="projects">
+        <h2>Works</h2>
+        <div class="project-card">
+            <h3><a href="project1.html">Asset Barrel Fuel</a></h3>
+            <p>this is an asset for unity asset store.</p>
         </div>
-    </div>
-</div>
+        
+    </section>
 
-{{ partial "footer" . }}
-{{ end }}
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <ul class="social-links">
+            
+            <li><a href="https://x.com/Mc25Diego" target="_blank">Twitter</a></li>
+            <li><a href="https://github.com/diegomc252525" target="_blank">GitHub</a></li>
+            <li><a href="https://diegomc252.artstation.com/" target="_blank">ArtStation</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Diegomc25. All rights reserved.</p>
+    </footer>
+</body>
+</html>
