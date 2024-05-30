@@ -1,13 +1,17 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #333;
+  background-color: #015d6d;
   color: white;
   padding: 1em 0;
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  top: 0;
 }
 
 nav ul {
@@ -25,14 +29,22 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
-
-#hero {
-  background-color: #f4f4f4;
-  text-align: center;
-  padding: 2em 0;
+nav ul li a:hover{
+  color: #cee6ff;
+  font-size: 17px;
 }
 
-#about, #projects, #contact {
+#hero {
+  background-color: #a8e6ff;
+  text-align: center;
+  padding: 2em 0;
+  margin-top: 80px; 
+}
+
+#about, #projects, #contact #games{
+  padding: 2em;
+}
+section#games{
   padding: 2em;
 }
 
@@ -40,11 +52,13 @@ nav ul li a {
   border: 1px solid #ddd;
   padding: 1em;
   margin-bottom: 1em;
-}
-
-.project-card a {
   text-decoration: none;
   color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+.project-card:hover{
+  background-color: #d7e9fd;
 }
 
 .project-card a:hover {
@@ -76,7 +90,7 @@ nav ul li a {
 }
 
 footer {
-  background-color: #333;
+  background-color: #015d6d;
   color: white;
   text-align: center;
   padding: 1em 0;
@@ -86,3 +100,21 @@ footer {
   width: 50em;
 }
 
+.cardImg{
+  height: 100px;
+  border: 3px solid rgb(105, 105, 105);
+}
+.icon{
+  height: 13px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 3px;
+}
+.gmail{
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+.background{
+  height: 100px;
+}
