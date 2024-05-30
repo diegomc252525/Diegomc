@@ -2,10 +2,11 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #e8f7fc;
 }
 
 header {
-  background-color: #015d6d;
+  background-color: #002a31;
   color: white;
   padding: 1em 0;
   position: fixed;
@@ -58,7 +59,7 @@ section#games{
   justify-content: space-between;
 }
 .project-card:hover{
-  background-color: #d7e9fd;
+  background-color: #81d6fd;
 }
 
 .project-card a:hover {
